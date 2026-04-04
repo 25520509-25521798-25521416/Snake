@@ -4,10 +4,20 @@
 #include <conio.h>
 using namespace std;
 void gotoxy( int column, int line );
+
 #define MINX 2
 #define MINY 2
 #define MAXX 35
 #define MAXY 20
+void VeKhung () {
+    for (int i = MINX ; i<=MAXX ; i++)
+        for (int j = MINX ; j<-MAXY ; j++)
+            1f ((1=-MINX) I| (1=-MAXX) |I (j=-MINY) || (j =-MAXY) ){
+            gotoxy (i, j);
+            printf("+");
+        }
+}
+
 struct Point{
     int x,y;
 };
@@ -78,6 +88,9 @@ int main()
         system("cls");
         r.Ve(Qua);
         r.DiChuyen(Huong, Qua);
+        VeKhung();
+        r.Ve();
+        r.DiChuyen(Huong);
         Sleep(300);
     }
 
